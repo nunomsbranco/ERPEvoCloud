@@ -1,6 +1,31 @@
-```markdown
-# My GitHub Code Library
+```JSON
+{
+  "EventSourceName": "Cegid Primavera ERP Evolution - v10",
+  "PollingInterval": 30,
+  "AggregationCount": 5,
+  "DefaultParameters": {
+	"CPUSoftLimit": 3000,
+	"CPUHardLimit": 5000,
+	"MemorySoftLimit": 2048,
+	"MemoryHardLimit": 4096
+  },
+  "InstanceParameters": {
+    "<instância>": {
+	  "CPUSoftLimit": 30000,
+	  "CPUHardLimit": 50000,
+	  "MemorySoftLimit": 40960,
+	  "MemoryHardLimit": 81920
+    }
+  },
+  "PerformanceCountersDefinitions": {
+	"CategoryName": "Cegid Primavera ERP Evolution - v10",
+	"CPUDeltasPCName": "CpuDeltas",
+	"CPUAveragePCName": "CpuAverage",
+	"MemoryDeltasPCName": "MemoryDeltas",
+	"MemoryAveragePCName": "MemoryAverage",
+	"OptionalMemoryPCEnabled": true,
+	"TotalAllocatedMemorySizePCName":"Ext_MonitoringTotalAllocatedMemorySize",
+	"SurvivedProcessMemorySizePCName":"App_MonitoringSurvivedProcessMemorySize"
+  }
+}
 
-```python
-def hello_world():
-    print("Hello, world!")
